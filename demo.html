@@ -251,7 +251,7 @@
             var web3 = new Web3(new Web3.providers.HttpProvider("https://opbnb-testnet-rpc.bnbchain.org"));
 
             async function changeNetwork() {
-                if (window.ethereum.networkVersion !== chainId) {
+                if (window.ethereum.networkVersion !== 5611) {
                         try {
                         await window.ethereum.request({
                             method: 'wallet_switchEthereumChain',
