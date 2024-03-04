@@ -226,7 +226,7 @@
         <script src="js/jquery.qrcode.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
         <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
-        <script type="text/javascript" src="./monetizado.js"></script>
+        <script type="text/javascript" src="./js/monetizado.js"></script>
 
         <script type="text/javascript">
             var web3 = new Web3(new Web3.providers.HttpProvider("https://opbnb-testnet-rpc.bnbchain.org"));
@@ -264,8 +264,8 @@
                 return txId;
             }
 
-            await checkIfUserHasAccess();
-            await verifyContentInfo();
+            checkIfUserHasAccess();
+            verifyContentInfo();
         </script>
 </body>
 
