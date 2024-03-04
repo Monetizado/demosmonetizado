@@ -284,6 +284,7 @@
                     document.getElementById("exclusive-content").style.display = "block";
                     document.getElementById("payBtn").style.display = "none";
                 } else {
+                    await verifyContentInfo();
                     document.getElementById("protected-content").style.display = "block";
                     document.getElementById("exclusive-content").style.display = "none";
                     document.getElementById("payBtn").style.display = "block";
@@ -313,7 +314,7 @@
                 return txId;
             }
             checkIfUserHasAccess();
-            verifyContentInfo();
+            
         </script>
 </body>
 
