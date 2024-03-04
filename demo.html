@@ -141,6 +141,25 @@
 
                         <!-- Area Chart -->
                         <div class="col-xl-8 col-lg-7">
+
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">This page is monetized thanks to Monetizado</h6>
+                                    
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body my_clubs">
+                                    <div id="contenido">
+                                        The content URI for this content is <b>opbnb:testnet://0xda3ec0b8bddd2e8bdedede3333fbaf938fcc18c5/0</b>
+                                    </div>
+                                    <div id="contenido">
+                                        You paid, and you have access for this exclusive content.
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
@@ -231,7 +250,34 @@
         <script type="text/javascript">
             var web3 = new Web3(new Web3.providers.HttpProvider("https://opbnb-testnet-rpc.bnbchain.org"));
 
+            async function changeNetwork() {
+                if (window.ethereum.networkVersion !== chainId) {
+                        try {
+                        await window.ethereum.request({
+                            method: 'wallet_switchEthereumChain',
+                            params: [{ chainId: web3.utils.toHex(5611) }]
+                        });
+                        } catch (err) {
+                            // This error code indicates that the chain has not been added to MetaMask
+                        if (err.code === 4902) {
+                            await window.ethereum.request({
+                            method: 'wallet_addEthereumChain',
+                            params: [
+                                {
+                                chainName: "opBnB Testnet",
+                                chainId: web3.utils.toHex(5611),
+                                nativeCurrency: { name: "BNB", decimals: 18, symbol: "BNB" },
+                                rpcUrls: ["https://opbnb-testnet-rpc.bnbchain.org"]
+                                }
+                            ]
+                            });
+                        }
+                        }
+                    }
+            }
+
             async function checkIfUserHasAccess() {
+                await changeNetwork();
                 var access = await window.monetizado.userHasAccess(web3);
                 if(access) {
                     document.getElementById("protected-content").style.display = "none";
@@ -245,6 +291,7 @@
             }
 
             async function verifyContentInfo() {
+                await changeNetwork();
                 var info = await window.monetizado.getContentInfo(web3);
                 if(info != null) {
                     document.getElementById("amountToPay").textContent = web3.utils.fromWei(info.accessCost.toBigInt(),"ether");
@@ -253,17 +300,18 @@
             }
 
             async function verifyContentByCreator() {
+                await changeNetwork();
                 var info = await window.monetizado.getContentList(web3);
                 return info;
             }
 
             async function payForAccess() {
+                await changeNetwork();
                 var amount = document.getElementById("amountToPay").textContent;
                 amount = web3.utils.toWei(amount,"ether");
                 var txId = await window.monetizado.payContent(web3,amount);
                 return txId;
             }
-
             checkIfUserHasAccess();
             verifyContentInfo();
         </script>
