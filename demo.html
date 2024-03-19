@@ -248,14 +248,14 @@
         <script type="text/javascript" src="./js/monetizado.js"></script>
 
         <script type="text/javascript">
-            var web3 = new Web3(new Web3.providers.HttpProvider("https://opbnb-testnet-rpc.bnbchain.org"));
+            var web3 = new Web3(new Web3.providers.HttpProvider("https://sepolia.base.org"));
 
             async function changeNetwork() {
-                if (window.ethereum.networkVersion !== 5611) {
+                if (window.ethereum.networkVersion !== 84532) {
                         try {
                         await window.ethereum.request({
                             method: 'wallet_switchEthereumChain',
-                            params: [{ chainId: web3.utils.toHex(5611) }]
+                            params: [{ chainId: web3.utils.toHex(84532) }]
                         });
                         } catch (err) {
                             // This error code indicates that the chain has not been added to MetaMask
@@ -264,10 +264,10 @@
                             method: 'wallet_addEthereumChain',
                             params: [
                                 {
-                                chainName: "opBnB Testnet",
-                                chainId: web3.utils.toHex(5611),
-                                nativeCurrency: { name: "BNB", decimals: 18, symbol: "BNB" },
-                                rpcUrls: ["https://opbnb-testnet-rpc.bnbchain.org"]
+                                chainName: "Base Sepolia",
+                                chainId: web3.utils.toHex(84532),
+                                nativeCurrency: { name: "ETH", decimals: 18, symbol: "ETH" },
+                                rpcUrls: ["https://sepolia.base.org"]
                                 }
                             ]
                             });
