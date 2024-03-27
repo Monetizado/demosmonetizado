@@ -530,8 +530,7 @@ window[monetizadoProp] = {
 				to: contractNetwork,
 				data: encodedABI,
 				value: Web3.utils.numberToHex(amount),
-				gasLimit: '0x5208',
-				maxPriorityFeePerGas: gasPrice};
+				gasLimit: '0x5208'};
 
             var payContentId = await ethereum
             .request({
