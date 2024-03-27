@@ -21,7 +21,7 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 
-    <link rel="monetizado" href="base:testnet://0xda3ec0b8bddd2e8bdedede3333fbaf938fcc18c5/0" />
+    <link rel="monetizado" href="botanix:testnet://0xda3ec0b8bddd2e8bdedede3333fbaf938fcc18c5/0" />
 
 </head>
 
@@ -248,14 +248,14 @@
         <script type="text/javascript" src="./js/monetizado.js"></script>
 
         <script type="text/javascript">
-            var web3 = new Web3(new Web3.providers.HttpProvider("https://sepolia.base.org"));
+            var web3 = new Web3(new Web3.providers.HttpProvider("https://node.botanixlabs.dev"));
 
             async function changeNetwork() {
-                if (window.ethereum.networkVersion !== 84532) {
+                if (window.ethereum.networkVersion !== 3636) {
                         try {
                         await window.ethereum.request({
                             method: 'wallet_switchEthereumChain',
-                            params: [{ chainId: web3.utils.toHex(84532) }]
+                            params: [{ chainId: web3.utils.toHex(3636) }]
                         });
                         } catch (err) {
                             // This error code indicates that the chain has not been added to MetaMask
@@ -264,10 +264,10 @@
                             method: 'wallet_addEthereumChain',
                             params: [
                                 {
-                                chainName: "Base Sepolia",
-                                chainId: web3.utils.toHex(84532),
-                                nativeCurrency: { name: "ETH", decimals: 18, symbol: "ETH" },
-                                rpcUrls: ["https://sepolia.base.org"]
+                                chainName: "Botanix Testnet",
+                                chainId: web3.utils.toHex(3636),
+                                nativeCurrency: { name: "BTC", decimals: 18, symbol: "BTC" },
+                                rpcUrls: ["https://node.botanixlabs.dev"]
                                 }
                             ]
                             });
