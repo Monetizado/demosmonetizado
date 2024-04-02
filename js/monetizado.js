@@ -6,7 +6,7 @@ const networks = {
 	"arbitrum:sepolia" : "0x3258814758AC48fE9c0869d43Df8F13aD0cB2A25"
 }
 
-const networksEIP1559 = ["bnb","opbnb","base","arbitrum"];
+const networksEIP1559 = ["bnb","opbnb","base"];
 
 const monetizadoAbi = [
 	{
