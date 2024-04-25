@@ -6,4 +6,5 @@
 - Demo with Filecoin: https://monetizado.github.io/demosmonetizado/demo_filecoin.html
 - Demo with Mode: https://monetizado.github.io/demosmonetizado/demo_mode.html
 - Demo with Morph: https://monetizado.github.io/demosmonetizado/demo_morph.html
+- Demo with Scroll: https://monetizado.github.io/demosmonetizado/demo_scroll.html
 - Demo with Shardeum: https://monetizado.github.io/demosmonetizado/demo_shardeum.html
