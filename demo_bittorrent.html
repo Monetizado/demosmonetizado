@@ -295,7 +295,7 @@
                 var platformFee = await window.monetizado.getPlatformFee(web3);
                 document.getElementById("platform_fee").textContent = platformFee;
                 var amountWithdraw = await window.monetizado.getAmountForWithdraw(web3);
-                document.getElementById("amount_available").textContent = web3.utils.fromWei(amountWithdraw.toBigInt(),"ether");
+                document.getElementById("amount_available").textContent = web3.utils.fromWei(amountWithdraw,"ether");
 
                 if(access || (info != null && info.isProtected == false)) {
                     document.getElementById("protected-content").style.display = "none";
