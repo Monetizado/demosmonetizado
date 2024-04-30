@@ -552,5 +552,140 @@ window[monetizadoProp] = {
 
             return payContentId;
           }
+    },
+	getPlatformFee: async function(Web3){
+        var accounts = await ethereum.request({method: 'eth_requestAccounts'});
+        var account = accounts[0];
+        
+        const monetizationTag = document.querySelector('link[rel="monetizado"]');
+        const parts = monetizationTag.href.split("://");
+
+        const contractNetwork = networks[parts[0]];
+
+        var contractPublic = await getContract(Web3,contractNetwork,account);
+
+        if(contractPublic != undefined) {
+            var contentInfo = await ethereum
+              .request({
+                method: 'eth_call',
+                params: [
+                  {
+                    from: account, // The user's active address.
+                    data: contractPublic.methods.getPlatformFee().encodeABI(),
+                    to: contractNetwork
+                  },
+                ],
+              });
+              contentInfo = iface.decodeFunctionResult("getPlatformFee", contentInfo);
+              return contentInfo;
+          }
+    },
+    unprotectContent: async function(Web3){
+        var accounts = await ethereum.request({method: 'eth_requestAccounts'});
+        var account = accounts[0];
+        
+        const monetizationTag = document.querySelector('link[rel="monetizado"]');
+        const parts = monetizationTag.href.split("://");
+
+		
+
+        const contractNetwork = networks[parts[0]];
+
+		const networkName = parts[0].split(':')[0];
+        const creatorParts = parts[1].split("/");
+        const creatorId = creatorParts[0];
+        const sequenceId = creatorParts[1];
+
+		const isEIP1559 = networksEIP1559.includes(networkName);
+
+		if (creatorId == account) {
+			var contractPublic = await getContract(Web3,contractNetwork,account);
+
+			if(contractPublic != undefined) {
+				const query = contractPublic.methods.unprotectContent(sequenceId);
+				const encodedABI = query.encodeABI();
+				const gasPrice = Web3.utils.toHex(await Web3.eth.getGasPrice());
+
+				const paramsForEIP1559 = isEIP1559 ? {
+					from: account, 
+					to: contractNetwork,
+					data: encodedABI,
+					value: Web3.utils.numberToHex(amount),
+					gasLimit: '0x5208',
+					maxPriorityFeePerGas: gasPrice, 
+					maxFeePerGas: gasPrice
+				} : { from: account, 
+					to: contractNetwork,
+					data: encodedABI,
+					value: Web3.utils.numberToHex(amount),
+					gasLimit: '0x5208'};
+
+				var unprotectContentId = await ethereum
+				.request({
+				method: 'eth_sendTransaction',
+				params: [
+					paramsForEIP1559
+				],
+				});
+
+				return unprotectContentId;
+			}
+		} else {
+			console.error("You are not the owner of this creation");
+		}
+    },
+    protectContent: async function(Web3){
+        var accounts = await ethereum.request({method: 'eth_requestAccounts'});
+        var account = accounts[0];
+        
+        const monetizationTag = document.querySelector('link[rel="monetizado"]');
+        const parts = monetizationTag.href.split("://");
+
+		
+
+        const contractNetwork = networks[parts[0]];
+
+		const networkName = parts[0].split(':')[0];
+        const creatorParts = parts[1].split("/");
+        const creatorId = creatorParts[0];
+        const sequenceId = creatorParts[1];
+
+		const isEIP1559 = networksEIP1559.includes(networkName);
+
+		if (creatorId == account) {
+			var contractPublic = await getContract(Web3,contractNetwork,account);
+
+			if(contractPublic != undefined) {
+				const query = contractPublic.methods.protectContent(sequenceId);
+				const encodedABI = query.encodeABI();
+				const gasPrice = Web3.utils.toHex(await Web3.eth.getGasPrice());
+
+				const paramsForEIP1559 = isEIP1559 ? {
+					from: account, 
+					to: contractNetwork,
+					data: encodedABI,
+					value: Web3.utils.numberToHex(amount),
+					gasLimit: '0x5208',
+					maxPriorityFeePerGas: gasPrice, 
+					maxFeePerGas: gasPrice
+				} : { from: account, 
+					to: contractNetwork,
+					data: encodedABI,
+					value: Web3.utils.numberToHex(amount),
+					gasLimit: '0x5208'};
+
+				var protectContentId = await ethereum
+				.request({
+				method: 'eth_sendTransaction',
+				params: [
+					paramsForEIP1559
+				],
+				});
+
+				return protectContentId;
+			}
+		} else {
+			console.error("You are not the owner of this creation");
+		}
     }
 }
