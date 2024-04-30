@@ -610,14 +610,12 @@ window[monetizadoProp] = {
 					from: account, 
 					to: contractNetwork,
 					data: encodedABI,
-					value: Web3.utils.numberToHex(amount),
 					gasLimit: '0x5208',
 					maxPriorityFeePerGas: gasPrice, 
 					maxFeePerGas: gasPrice
 				} : { from: account, 
 					to: contractNetwork,
 					data: encodedABI,
-					value: Web3.utils.numberToHex(amount),
 					gasLimit: '0x5208'};
 
 				var unprotectContentId = await ethereum
@@ -664,14 +662,12 @@ window[monetizadoProp] = {
 					from: account, 
 					to: contractNetwork,
 					data: encodedABI,
-					value: Web3.utils.numberToHex(amount),
 					gasLimit: '0x5208',
 					maxPriorityFeePerGas: gasPrice, 
 					maxFeePerGas: gasPrice
 				} : { from: account, 
 					to: contractNetwork,
 					data: encodedABI,
-					value: Web3.utils.numberToHex(amount),
 					gasLimit: '0x5208'};
 
 				var protectContentId = await ethereum
