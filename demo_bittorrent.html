@@ -200,7 +200,7 @@
                                     <button id="unprotectBtn" onclick="unprotectContent()">Release the content</button> <br />
                                     <button id="protectBtn" onclick="protectContent()">Protect</button> <br />
                                     Amount available to withdraw: <span id="amount_available"></span> <br />
-                                    Platform fee:  <span id="platform_fee"></span> <br />
+                                    Platform fee: <span id="platform_fee"></span>% <br />
                                 </div>
                             </div>
                         </div>
@@ -294,6 +294,8 @@
                 var info = await window.monetizado.getContentInfo(web3);
                 var platformFee = await window.monetizado.getPlatformFee(web3);
                 document.getElementById("platform_fee").textContent = platformFee;
+                var amountWithdraw = await window.monetizado.getAmountForWithdraw(web3);
+                document.getElementById("amount_available").textContent = web3.utils.fromWei(amountWithdraw.toBigInt(),"ether");
 
                 if(access || (info != null && info.isProtected == false)) {
                     document.getElementById("protected-content").style.display = "none";

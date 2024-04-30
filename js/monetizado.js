@@ -505,7 +505,7 @@ window[monetizadoProp] = {
               });
               contentInfo = iface.decodeFunctionResult("getProtectedContentByAddressAndId", contentInfo);
               if(contentInfo.length > 0) {
-                return contentInfo[0].amountAvailable.toNumber();
+                return contentInfo[0].amountAvailable.toBigInt();
               }
               return null;
           }
@@ -611,7 +611,7 @@ window[monetizadoProp] = {
                 ],
               });
               contentInfo = iface.decodeFunctionResult("getPlatformFee", contentInfo);
-              return contentInfo[0].toNumber();
+              return contentInfo[0].toBigInt();
           }
     },
     unprotectContent: async function(Web3){
