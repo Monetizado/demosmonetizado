@@ -162,7 +162,7 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">This page is exclusive for subscriptors</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">This section is exclusive for subscriptors</h6>
                                     
                                 </div>
                                 <!-- Card Body -->
@@ -191,7 +191,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-4 col-lg-5">
+                        <div class="col-xl-8 col-lg-7">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">For content owner</h6>
@@ -199,7 +199,7 @@
                                 <div class="card-body">
                                     <button id="unprotectBtn" onclick="unprotectContent()">Release the content</button> <br />
                                     <button id="protectBtn" onclick="protectContent()">Protect</button> <br />
-                                    Amount available to withdraw: <span id="amount_available"></span> <button id="withdrawBtn" onclick="withdrawMoney()">Withdraw</button> <br />
+                                    Amount available to withdraw: <span id="amount_available"></span> <br />
                                     Platform fee:  <span id="platform_fee"></span> <br />
                                 </div>
                             </div>
@@ -292,7 +292,7 @@
                 await changeNetwork();
                 var access = await window.monetizado.userHasAccess(web3);
                 var info = await window.monetizado.getContentInfo(web3);
-                var platformFee = await window.monetizado.getContentInfo(web3);
+                var platformFee = await window.monetizado.getPlatformFee(web3);
                 document.getElementById("platform_fee").textContent = platformFee;
 
                 if(access || (info != null && info.isProtected == false)) {
