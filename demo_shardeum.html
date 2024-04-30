@@ -279,7 +279,8 @@
             async function checkIfUserHasAccess() {
                 await changeNetwork();
                 var access = await window.monetizado.userHasAccess(web3);
-                if(access) {
+                var info = await window.monetizado.getContentInfo(web3);
+                if(access || (info != null && info.isProtected == false)) {
                     document.getElementById("protected-content").style.display = "none";
                     document.getElementById("exclusive-content").style.display = "block";
                     document.getElementById("payBtn").style.display = "none";
