@@ -2,6 +2,7 @@
 
 - Demo with Arbitrum: https://monetizado.github.io/demosmonetizado/demo_arbitrum.html
 - Demo with Berachain: https://monetizado.github.io/demosmonetizado/demo_berachain.html
+- Demo with BitTorrent: https://monetizado.github.io/demosmonetizado/demo_bittorrent.html
 - Demo with Etherlink: https://monetizado.github.io/demosmonetizado/demo_etherlink.html
 - Demo with Filecoin: https://monetizado.github.io/demosmonetizado/demo_filecoin.html
 - Demo with Mode: https://monetizado.github.io/demosmonetizado/demo_mode.html
