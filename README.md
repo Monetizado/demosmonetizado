@@ -10,4 +10,4 @@
 - Demo with Morph: https://monetizado.github.io/demosmonetizado/demo_morph.html
 - Demo with Scroll: https://monetizado.github.io/demosmonetizado/demo_scroll.html
 - Demo with Shardeum: https://monetizado.github.io/demosmonetizado/demo_shardeum.html
-- Demo with Shardeum: https://monetizado.github.io/demosmonetizado/demo_taraxa.html
+- Demo with Taraxa: https://monetizado.github.io/demosmonetizado/demo_taraxa.html
