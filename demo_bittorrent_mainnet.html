@@ -293,7 +293,7 @@
                 var access = await window.monetizado.userHasAccess(web3);
                 var info = await window.monetizado.getContentInfo(web3);
                 var platformFee = await window.monetizado.getPlatformFee(web3);
-                document.getElementById("platform_fee").textContent = platformFee / 100;
+                document.getElementById("platform_fee").textContent = platformFee / BigInt(100);
                 var amountWithdraw = await window.monetizado.getAmountForWithdraw(web3);
                 document.getElementById("amount_available").textContent = web3.utils.fromWei(amountWithdraw,"ether");
 
