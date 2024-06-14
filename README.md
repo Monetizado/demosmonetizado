@@ -1,5 +1,7 @@
 # Demos Monetizado
 
+## Testnets
+
 - Demo with Arbitrum: https://monetizado.github.io/demosmonetizado/demo_arbitrum.html
 - Demo with Berachain: https://monetizado.github.io/demosmonetizado/demo_berachain.html
 - Demo with BitTorrent: https://monetizado.github.io/demosmonetizado/demo_bittorrent.html
@@ -11,3 +13,8 @@
 - Demo with Scroll: https://monetizado.github.io/demosmonetizado/demo_scroll.html
 - Demo with Shardeum: https://monetizado.github.io/demosmonetizado/demo_shardeum.html
 - Demo with Taraxa: https://monetizado.github.io/demosmonetizado/demo_taraxa.html
+
+
+## Mainnets
+
+- Demo with BitTorrent: https://monetizado.github.io/demosmonetizado/demo_bittorrent_mainnet.html
