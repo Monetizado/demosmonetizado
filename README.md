@@ -8,6 +8,7 @@
 - Demo with Camp Network v1: https://monetizado.github.io/demosmonetizado/demo_camp.html
 - Demo with Etherlink: https://monetizado.github.io/demosmonetizado/demo_etherlink.html
 - Demo with Filecoin: https://monetizado.github.io/demosmonetizado/demo_filecoin.html
+- Demo with Linea: https://monetizado.github.io/demosmonetizado/demo_linea.html
 - Demo with Lisk: https://monetizado.github.io/demosmonetizado/demo_lisk.html
 - Demo with Meter: https://monetizado.github.io/demosmonetizado/demo_meter.html
 - Demo with Mode: https://monetizado.github.io/demosmonetizado/demo_mode.html
