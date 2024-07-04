@@ -14,6 +14,7 @@
 - Demo with Meter: https://monetizado.github.io/demosmonetizado/demo_meter.html
 - Demo with Mode: https://monetizado.github.io/demosmonetizado/demo_mode.html
 - Demo with Morph: https://monetizado.github.io/demosmonetizado/demo_morph.html
+- Demo with Rootstock: https://monetizado.github.io/demosmonetizado/demo_rootstock.html
 - Demo with Scroll: https://monetizado.github.io/demosmonetizado/demo_scroll.html
 - Demo with Shardeum: https://monetizado.github.io/demosmonetizado/demo_shardeum.html
 - Demo with Shido: https://monetizado.github.io/demosmonetizado/demo_shido.html
