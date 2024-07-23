@@ -21,6 +21,7 @@
 - Demo with Shardeum: https://monetizado.github.io/demosmonetizado/demo_shardeum.html
 - Demo with Shido: https://monetizado.github.io/demosmonetizado/demo_shido.html
 - Demo with Taraxa: https://monetizado.github.io/demosmonetizado/demo_taraxa.html
+- Demo with Theta: https://monetizado.github.io/demosmonetizado/demo_theta.html
 
 
 ## Mainnets
