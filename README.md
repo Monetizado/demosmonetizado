@@ -9,6 +9,7 @@
 - Demo with Celo: https://monetizado.github.io/demosmonetizado/demo_celo.html
 - Demo with Chiliz: https://monetizado.github.io/demosmonetizado/demo_chiliz.html
 - Demo with Core: https://monetizado.github.io/demosmonetizado/demo_core.html
+- Demo with EduChain/OpenCampus: https://monetizado.github.io/demosmonetizado/demo_educhain.html
 - Demo with Etherlink: https://monetizado.github.io/demosmonetizado/demo_etherlink.html
 - Demo with Filecoin: https://monetizado.github.io/demosmonetizado/demo_filecoin.html
 - Demo with Linea: https://monetizado.github.io/demosmonetizado/demo_linea.html
