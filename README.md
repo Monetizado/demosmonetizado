@@ -21,6 +21,7 @@
 - Demo with Rootstock: https://monetizado.github.io/demosmonetizado/demo_rootstock.html
 - Demo with Scroll: https://monetizado.github.io/demosmonetizado/demo_scroll.html
 - Demo with Shardeum: https://monetizado.github.io/demosmonetizado/demo_shardeum.html
+- Demo with Shibarium: https://monetizado.github.io/demosmonetizado/demo_shibarium.html
 - Demo with Shido: https://monetizado.github.io/demosmonetizado/demo_shido.html
 - Demo with Taraxa: https://monetizado.github.io/demosmonetizado/demo_taraxa.html
 - Demo with Theta: https://monetizado.github.io/demosmonetizado/demo_theta.html
