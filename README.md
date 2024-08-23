@@ -13,6 +13,7 @@
 - Demo with Etherlink: https://monetizado.github.io/demosmonetizado/demo_etherlink.html
 - Demo with Filecoin: https://monetizado.github.io/demosmonetizado/demo_filecoin.html
 - Demo with Fuse: https://monetizado.github.io/demosmonetizado/demo_fuse.html
+- Demo with Kaia: https://monetizado.github.io/demosmonetizado/demo_kaia.html
 - Demo with KiiChain: https://monetizado.github.io/demosmonetizado/demo_kiichain.html
 - Demo with Linea: https://monetizado.github.io/demosmonetizado/demo_linea.html
 - Demo with Lisk: https://monetizado.github.io/demosmonetizado/demo_lisk.html
