@@ -20,6 +20,7 @@
 - Demo with Meter: https://monetizado.github.io/demosmonetizado/demo_meter.html
 - Demo with Mode: https://monetizado.github.io/demosmonetizado/demo_mode.html
 - Demo with Morph: https://monetizado.github.io/demosmonetizado/demo_morph.html
+- Demo with Neo X: https://monetizado.github.io/demosmonetizado/demo_neox.html
 - Demo with PWR Chain BTC+: https://monetizado.github.io/demosmonetizado/demo_pwrbtc.html
 - Demo with Rootstock: https://monetizado.github.io/demosmonetizado/demo_rootstock.html
 - Demo with Scroll: https://monetizado.github.io/demosmonetizado/demo_scroll.html
