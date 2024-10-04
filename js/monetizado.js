@@ -389,7 +389,7 @@ async function getContract(web3,contractNetwork, userAddress) {
     return contractPublic;
   }
 
-var iface = new ethers.Interface(monetizadoAbi);
+var iface = new ethers.utils.Interface(monetizadoAbi);
 
 // Nombre de la nueva propiedad
 const monetizadoProp = 'monetizado';
