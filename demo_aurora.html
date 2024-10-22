@@ -248,7 +248,7 @@
         <script type="text/javascript">
             
 
-            var web3 = new Web3(new Web3.providers.HttpProvider("	https://testnet.aurora.dev"));
+            var web3 = new Web3(new Web3.providers.HttpProvider("https://testnet.aurora.dev"));
 
             async function changeNetwork() {
                 if (window.ethereum.networkVersion !== 1313161555) {
@@ -267,7 +267,7 @@
                                 chainName: "Aurora Testnet",
                                 chainId: web3.utils.toHex(1313161555),
                                 nativeCurrency: { name: "ETH", decimals: 18, symbol: "ETH" },
-                                rpcUrls: ["	https://testnet.aurora.dev"]
+                                rpcUrls: ["https://testnet.aurora.dev"]
                                 }
                             ]
                             });
