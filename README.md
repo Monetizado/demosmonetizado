@@ -2,6 +2,7 @@
 
 ## Testnets
 
+- Demo with AIA: https://monetizado.github.io/demosmonetizado/demo_aia.html
 - Demo with Arbitrum: https://monetizado.github.io/demosmonetizado/demo_arbitrum.html
 - Demo with Aurora: https://monetizado.github.io/demosmonetizado/demo_aurora.html
 - Demo with Berachain: https://monetizado.github.io/demosmonetizado/demo_berachain.html
