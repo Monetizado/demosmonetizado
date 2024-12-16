@@ -19,7 +19,7 @@
 - Demo with KiiChain: https://monetizado.github.io/demosmonetizado/demo_kiichain.html
 - Demo with Linea: https://monetizado.github.io/demosmonetizado/demo_linea.html
 - Demo with Lisk: https://monetizado.github.io/demosmonetizado/demo_lisk.html
-- Demo with Meter: https://monetizado.github.io/demosmonetizado/demo_mantle.html
+- Demo with Mantle: https://monetizado.github.io/demosmonetizado/demo_mantle.html
 - Demo with Meter: https://monetizado.github.io/demosmonetizado/demo_meter.html
 - Demo with Mode: https://monetizado.github.io/demosmonetizado/demo_mode.html
 - Demo with Moonbeam: https://monetizado.github.io/demosmonetizado/demo_moonbeam.html
