@@ -11,6 +11,7 @@
 - Demo with Celo: https://monetizado.github.io/demosmonetizado/demo_celo.html
 - Demo with Chiliz: https://monetizado.github.io/demosmonetizado/demo_chiliz.html
 - Demo with Core: https://monetizado.github.io/demosmonetizado/demo_core.html
+- Demo with Creator Chain: https://monetizado.github.io/demosmonetizado/demo_creator.html
 - Demo with DuckChain: https://monetizado.github.io/demosmonetizado/demo_duckchain.html
 - Demo with EduChain/OpenCampus: https://monetizado.github.io/demosmonetizado/demo_educhain.html
 - Demo with Etherlink: https://monetizado.github.io/demosmonetizado/demo_etherlink.html
